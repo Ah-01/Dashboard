@@ -1,0 +1,119 @@
+/*===============================================================================
+***********************         NavBar Style      *******************************
+===============================================================================*/
+body{
+    padding-top: 50px;
+}
+.navbar-wrapper{
+    background-color: #0B3253;
+    margin-bottom: 0;
+    border: none;
+}
+.navbar-wrapper .navbar-nav li a{
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-wrapper .navbar-nav > li > a:hover, .navbar-wrapper .navbar-nav > li > a:focus,
+.navbar-wrapper .navbar-nav li.active a:focus,
+.navbar-wrapper .navbar-nav li.active a:hover,
+.navbar-wrapper .navbar-nav li a:hover,
+.navbar-wrapper .navbar-nav li.active a{
+    background-color: #ddd;
+    color: #0B3253;
+}
+.navbar-wrapper .navbar-nav .input-group-addon{
+    color: #000;
+}
+.navbar-wrapper .input-group{
+    max-width: 180px;
+}
+.search-wrapper{
+    min-width: 250px;
+}
+/*===============================================================================
+***********************       Right Tabs Style       *****************************
+===============================================================================*/
+
+.tabs-left {
+    min-height: 500px;
+    border-color: transparent;
+}
+.tabs-left a{
+    font-size: 20px;
+    color: #fff;
+}
+.tabs-left>li{
+    float: none;
+    margin-bottom: 2px;
+}
+.tabs-left>li {
+    margin-right: -1px;
+}
+
+.tabs-left>li>a:hover,
+.tabs-left>li.active>a:focus,
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    color: #0B3253 !important;
+    background-color: #ddd;
+}
+
+.tabs-left>li>a {
+    border-radius: 0;
+    margin-right: 0;
+    display:block;
+}
+
+.left-tab-menu{
+    width: 50px;
+    padding: 0;
+    background: #0B3253;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+}
+.left-tab-wrapper .tab-content{
+    padding: 20px;
+}
+.tab-contant-wrapper{
+    margin-left: 50px;
+} 
+
+
+
+.graph-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+.graph-container img{
+    width: 100%;
+}
+.graph-container .zoom-button{
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    font-size: 16px;
+    color: #000;
+}
+.modal-header .close .fa,
+.graph-container .zoom-button .fa{
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+.graph-container .modal-dialog{
+    width: 95%;
+    height: auto;
+}
+/*===============================================================================
+**************************       Media Query        *****************************
+===============================================================================*/
+@media(min-width: 320px) and (max-width: 767px){
+    .tab-contant-wrapper{
+        display: inline-block;
+        width: 82%;
+    } 
+}
